@@ -1,0 +1,53 @@
+.hero {
+  background: linear-gradient(135deg, #16213e 0%, #263c6b 100%);
+  color: white;
+  padding: 36px 24px 42px;
+}
+.hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+}
+.eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .12em; opacity: .75; }
+h1 { margin: 8px 0 8px; font-size: clamp(28px, 5vw, 42px); line-height: 1.1; }
+.hero p { margin: 0; opacity: .82; }
+.refresh-btn { background: white; color: #263c6b; }
+.content { margin-top: -20px; }
+.summary-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 20px; }
+.summary-card {
+  background: white; border-radius: 14px; padding: 18px 20px;
+  box-shadow: 0 6px 20px rgba(21, 34, 59, .08);
+}
+.summary-label { display: block; font-size: 12px; color: #68758a; text-transform: uppercase; letter-spacing: .08em; }
+.summary-card strong { display: block; font-size: 24px; margin: 6px 0; }
+.summary-card small { color: #7c8798; }
+.panel { background: white; border-radius: 16px; box-shadow: 0 6px 20px rgba(21, 34, 59, .08); overflow: hidden; }
+.panel-head {
+  display: flex; justify-content: space-between; align-items: center; gap: 20px;
+  padding: 22px 24px 8px;
+}
+.panel-head h2 { margin: 0 0 5px; font-size: 21px; }
+.panel-head p { margin: 0; color: #788398; font-size: 13px; }
+.search { width: 280px; }
+.table-wrap { overflow-x: auto; }
+.weather-table { width: 100%; }
+th.mat-mdc-header-cell { color: #59667b; font-size: 12px; }
+td.mat-mdc-cell, th.mat-mdc-header-cell { padding-left: 18px; padding-right: 18px; }
+.city-cell { display: flex; align-items: center; gap: 10px; min-width: 150px; }
+.city-cell small { display: block; color: #8a94a5; margin-top: 2px; }
+.weather-icon { font-size: 26px; }
+.state { min-height: 260px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: #7a8495; padding: 30px; }
+.state p { margin: 0; text-align: center; }
+.error { color: #a43d3d; }
+.footer-note { display: flex; justify-content: center; gap: 10px; color: #8b95a6; font-size: 12px; padding: 22px 0; }
+@media (max-width: 760px) {
+  .hero-inner, .panel-head { flex-direction: column; align-items: stretch; }
+  .summary-grid { grid-template-columns: 1fr; }
+  .search { width: 100%; }
+  .refresh-btn { align-self: flex-start; }
+  .hero { padding-left: 16px; padding-right: 16px; }
+  td.mat-mdc-cell, th.mat-mdc-header-cell { padding-left: 12px; padding-right: 12px; }
+}
