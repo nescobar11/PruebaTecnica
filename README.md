@@ -1,4 +1,4 @@
-# Talycap Global - Pruebas técnicas resueltas
+#PRUEBA TÉCNICA
 
 Se incluyen dos entregables independientes:
 
